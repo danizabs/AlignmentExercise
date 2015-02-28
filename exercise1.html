@@ -10,11 +10,13 @@
   h1 {
     text-align: center;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 60px;
+    font-size: 65px;
+    margin-bottom: 0px;
   }
   h2 {
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 0px;
   }
   #apps img {
     float: left;
@@ -30,18 +32,73 @@
     float: right;
     margin-right: 15px;
   }
+  #soup img {
+    float: right;
+    margin-right: 15px;
+    width: 150px;
+    height: auto;
+  }
   #riceandbeans img {
     float: left;
     margin-right: 25px;
   }
+
   h3 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 25px;
+    margin-bottom: 0px;
   }
   p {
     font-family: 'Raleway', sans-serif;
   }
-
+  #container1 {
+    width: 1113px;
+    background-color: #FA5858;
+    padding-left: 20px;
+  }
+  #inside1 {
+    width: 1100px;
+  }
+  #container2 {
+    width: 1100px;
+    background-color: #FF8000;
+  }
+  #inside2 {
+    width: 1100px;
+  }
+  #container3 {
+    width: 1100px;
+    background-color: #99CC00;
+  }
+  #inside3 {
+    width: 1100px;
+  }
+  #container4 {
+    width: 1090px;
+    background-color: #FFBF00;
+    padding-left: 20px;
+  }
+  #inside4 {
+    width: 1100px;
+  }
+  #riceBeans {
+    margin-left: 175px;
+    background-color: #F7D358;
+    margin-right: 830px;
+  }
+  #appetizers {
+    background-color: #F78181;
+    margin-right: 830px;
+    margin-left: 175px;
+  }
+  #soups {
+    background-color: #FAAC58;
+    margin-right: 830px;
+  }
+  #sandwiches {
+    background-color: #ACFA58;
+    margin-right: 830px;
+  }
   </style>
   <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
@@ -52,28 +109,49 @@
   <h1>The Bean Truck</h1>
   <h2><em>Beans are good food!</em></h2>
   <section id="apps">
-    <img src="images/farinata.jpg" alt="farinata"><h3>Appetizers</h3>
+    <div class="headline" id="appetizers"><h3>Appetizers</h3></div>
+    <div class="container" id="container1">
+      <div class="spaceInside" id="inside1">
+        <img src="images/farinata.jpg" alt="farinata">
     <p class="item"><strong>Farinata:</strong> A light, crispy pancake made of chickpea flour and seasoned with rosemary and black pepper.</p>
     <p class="item"><strong>Hummus:</strong> The classic chickpea dip. Ours has sriacha and lots of lemon. Served with pita and oil-cured black olives.</p>
-    <p class="item"><strong>White Bean Dip:</strong> Creamy cannelini beans mashed with olive oil, oregano, and lots of black pepper. Served with crostini and piave cheese</p>
+    <p class="item"><strong>White Bean Dip:</strong> Creamy cannelini beans mashed with olive oil, oregano, and lots of black pepper. Served with crostini and piave cheese.</p>
+  </div>
+</div>
   </section>
   &nbsp;
   <section id="soup">
-    <h3>Soups</h3>
+    <div class="headline" id="soups"><h3>Soups</h3></div>
+    <div class="container" id="container2">
+      <div class="spaceInside" id="inside2">
+        <img src="images/mexSoup.jpg" alt="cuban black bean">
     <p class="item"><strong>Tuscan Bean:</strong> White bean soup with kale, sausage and pancetta.</p>
     <p class="item"><strong>Cuban Black Bean:</strong> Spicy black bean soup with lime and cilantro.</p>
     <p class="item"><strong>Red Lentil Dal:</strong> Indian red lentil soup seasoned with curry. Served with flakey paratha bread.</p>
+  </div>
+</div>
   </section>
   &nbsp;
   <section id="sandwich">
-    <img src="images/whitebeancake.jpg" alt="white bean cake"><h3>Sandwiches</h3>
+    <div class="headline" id="sandwiches"><h3>Sandwiches</h3></div>
+    <div class="container" id="container3">
+      <div class="spaceInside" id="inside3">
+    <img src="images/whitebeancake.jpg" alt="white bean cake">
     <p class="item"><strong>Falafel:</strong> The classic. Deep fried and crispy, loaded with cumin.</p>
     <p class="item"><strong>White Bean Cake:</strong> White beans with rosemary, crisp on the outside and creamy in the middle. Served with house pickles.</p>
+  </div>
+</div>
   </section>
   &nbsp;
   <section id="riceandbeans">
-    <img src="images/blackbeans.jpg" alt="black beans"><h3>Beans 'n Rice</h3>
-    <p class="item"><strong>Beer glazed black beans:</strong> Simmered in Flying Fish Oyster Stout, these spicy black beans are earthy and slightly sweet. Served with cornbread.</p>
-    <p class="item"><strong>Red beans and rice:</strong> The New Orleans classic, cooked with pickled pork and creole spices.</p>
+    <div class="lastHeader" id="riceBeans"><h3>Beans 'n Rice</h3></div>
+    <div class="container" id="container4">
+      <div class="spaceInside" id="inside4">
+    <img src="images/blackbeans.jpg" alt="black beans">
+    <p class="item"><strong>Beer-Glazed Black Beans:</strong> Simmered in Flying Fish Oyster Stout, these spicy black beans are earthy and slightly sweet. Served with cornbread.</p>
+    <p class="item"><strong>Red Beans and Rice:</strong> The New Orleans classic, cooked with pickled pork and creole spices.</p>
+  </div>
+</div>
+  </section>
 </body>
 </html>
